@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html data-type="example" data-id="panorama-click-free">
+  <head>
+    <title>jQuery Reel Orientable Stitched Panorama Example</title>
+    <meta charset='utf-8' content='text/html' http-equiv='Content-type' />
+
+    <script src='js/jquery-1.9.1.min.js' type='text/javascript'></script>
+    <script src='js/jquery.reel.js' type='text/javascript'></script>
+
+    <!-- Common examples style (gray background, thin fonts etc.) -->
+    <link  rel="stylesheet" type="text/css" href="css/style.css"/> 
+	<link rel="stylesheet" href="css/animation.css">
+	<!--[if IE 7]><link rel="stylesheet" href="css/" + font.fontname + "-ie7.css"><![endif]-->
+
+    <style>
+
+    </style>
+
+  </head>
+  <body>
+    <a href="index.html" class="back-to-map"></a> 
+
+    <img src="2-1-02.jpg" 
+      class="reel reel-full"
+      id="image"
+      data-image="2-1-02.jpg"
+      data-orientable="true"
+      data-stitched="6311" >
+
+
+    <a class="reel-annotation up " id="up" href="2-2-02.html"      
+      data-x="3168" data-y="60%" data-for="image">
+	  <i class="demo-icon icon-up-open">&#xe801;</i> 
+      На 2-й этаж 2-го корпуса
+    </a>
+
+    <a class="reel-annotation forward" id="forward" href="2-1-03.html"
+      data-x="1632" data-y="70%" data-for="image">
+	  <i class="demo-icon icon-up-big">&#xe802;</i> 
+      К кабинету 2-110
+    </a>
+	
+	 <a class="reel-annotation forward" id="forward1" href="2-1-01.html"
+      data-x="4488" data-y="70%" data-for="image">
+	  <i class="demo-icon icon-up-big">&#xe802;</i> 
+      К Библиотеке
+    </a>
+
+    <script>
+      $(function(){ // when DOM ready
+return;
+        $('#image').reel({
+          orientable:  true,
+          annotations: {
+            
+          }
+        });
+
+      });
+    </script>
+
+
+  </body>
+</html>
+
